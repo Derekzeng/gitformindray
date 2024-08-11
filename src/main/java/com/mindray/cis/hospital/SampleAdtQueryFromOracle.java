@@ -37,6 +37,7 @@ public class SampleAdtQueryFromOracle implements IClient, IAdtQuery {
                 logger.info("[error:]{},返回空的集合.",e.getMessage());
             }
             logger.info("");
+            logger.info("master 添加的日志，合并的时候会有冲突.");
 
         }
         return adtResponses;
