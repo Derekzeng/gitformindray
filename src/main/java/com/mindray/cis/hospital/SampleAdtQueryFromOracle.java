@@ -36,6 +36,7 @@ public class SampleAdtQueryFromOracle implements IClient, IAdtQuery {
             }catch (Exception e){
                 logger.info("[error:]{},返回空的集合.",e.getMessage());
             }
+            logger.info("");
 
         }
         return adtResponses;
