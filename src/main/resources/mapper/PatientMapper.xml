@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mindray.mapper.PatientMapper">
+    <select id="queryPatientInfoByPid"  resultType="com.mindray.mapper.dto.PatientInfo">
+        select pid ,name,vid,gender,age,dob,bed,room,department,facility,height,weight,deviceid from  ZHIYDBA.I_EGATEWAY
+        <where>
+            and pid =#{pid}
+        </where>
+    </select>
+</mapper>
